@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WebRTC Firebase Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>WebRTC Voice/Video Call (Firebase Signaling)</h2>
+
+  <video id="localVideo" autoplay playsinline muted></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <div>
+    <button id="startBtn">Start Camera</button>
+    <button id="createBtn">Create Room</button>
+    <input id="roomId" placeholder="Enter Room ID">
+    <button id="joinBtn">Join Room</button>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
